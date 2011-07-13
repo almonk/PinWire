@@ -1,0 +1,382 @@
+@import url(reset.css);
+@import url(JqueryUI/JqueryUI.css);
+
+html{
+	overflow-y:scroll;
+}
+
+body {
+	font-family: arial;
+	font-size: 12px;
+	background: #fff;
+}
+
+a {
+	color: #A51;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 13px;
+	font-weight: normal;
+	color: #aaa;
+	margin-top: 25px;
+	margin-top: 5px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 650px;
+}
+
+#sidebar {
+	float: left;
+	display: block;
+	width: 300px;
+	background: #eee;
+	color: #333;
+	height: 35px;
+	overflow: hidden;
+}
+
+#sidebar a {
+
+}
+
+#sidebar #nav {
+	padding: 0px 0;
+}
+
+#sidebar #nav li {
+	min-height: 20px;
+	position: relative;
+}
+
+#sidebar #nav a {
+	color: blue;
+	display: block;
+	padding: 10px 10px;
+	font-size: 13px;
+}
+
+#sidebar #nav a:hover {
+	text-decoration: none;
+}
+
+
+#sidebar #nav a.on {
+	z-index: 2;
+	background: #eee;
+	color: #666;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 270px;
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(213,33,120) 0%,
+    rgb(224,36,127) 100%
+);
+
+}
+
+#sidebar #nav li .shadow {
+	position: absolute;
+	right: 0;
+	bottom: -10px;
+	height: 0px;
+	width: 0px;
+	border-color: #5b1034 transparent transparent #5b1034;
+	border-width: 5px;
+	border-style: solid;
+}
+
+
+#sidebar form {
+	padding: 20px;
+	height: 37px;
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(242,242,242) 0%,
+    rgb(252,252,252) 100%
+);
+
+	border-bottom: 1px solid #ddd;
+}
+
+#sidebar form input {
+	width: 94%;
+	position: relative;
+	padding: 4px;
+	top:6px;
+}
+
+#sidebar #userinfo {
+	padding: 5px;
+	padding-right: 17px;
+	border-bottom: 1px solid #ddd;
+}
+
+#sidebar #userinfo h2 {
+	font-style: normal;
+	font-size: 12px;
+	margin: 0;
+	color: #333;
+}
+
+#sidebar #userinfo a {
+	color: #555;
+}
+
+#sidebar #last_modified {
+	padding: 20px;
+}
+
+#sidebar #last_modified h2 {
+	margin: 0;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+#sidebar #last_modified li {
+	padding: 4px 0;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+#sidebar #last_modified li:first-child {
+	border-top: 1px solid #e3e3e3;
+}
+
+#sidebar #last_modified a {
+	color: #333;
+}
+
+#sidebar #last_modified a span {
+	color: #888;
+}
+
+#content {
+	float: left;
+	width: 919px;
+	padding: 20px 40px 70px;
+	background: #fff;
+	border-left: 1px solid #ddd;
+	min-height: 700px;
+	position: relative;
+}
+
+#logo {
+	background: #2f4248 url(images/logo.gif) no-repeat 20px 10px;
+	font-weight: bold;
+	padding: 20px;
+	text-indent: -9999px;
+}
+
+#breadcrumb {
+	overflow: hidden;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	color: #bbb;
+	width: 100%;
+	display: none;
+}
+
+#breadcrumb li:first-child {
+	display: none;
+}
+
+#breadcrumb li {
+	display: inline;
+	list-style: none;
+}
+
+#breadcrumb li a {
+	font-size: 12px;
+	color: #555;
+	display: block;
+	float: left;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-right: 4px;
+	padding: 4px 7px 4px 4px;
+}
+
+#breadcrumb li a:hover {
+	background: #eee;
+	border-color: #bbb;
+	color: #333;
+	text-decoration: none;
+}
+
+#footer {
+	position: absolute;
+	left: 40px;
+	display: none;
+	right: 40px;
+	bottom: 20px;
+	font-size: 11px;
+	background: #eee;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+dt a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #11A;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+dd {
+	margin-bottom: 1em;
+}
+
+dd, p.description {
+	font-size: 13px;
+	color: #888;
+}
+
+.ui-widget-content p.description {
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+/* WIRETABS */
+.WireTabs {
+    border-bottom: 1px solid #ccc;
+    height: 28px;
+	list-style: none;
+}
+
+#content #PageEditTabs {
+
+    left: 0;
+}
+
+#content .WireTabs li {
+    list-style: none;
+}
+
+#content .WireTabs li a {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #f4f4f4;
+    background: #f4f4f4;
+    display: block;
+    float: left;
+    position: relative;
+    bottom: 0px;
+    z-index: 2;
+    margin-right: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 8px;
+    color: #666;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#content .WireTabs li a.on {
+    padding: 6px 8px 7px 8px;
+    border-bottom: 1px solid white;
+    background: white;
+}
+
+#content .WireTabs li a#_ProcessPageEditView {
+	/* background: white; */
+}
+
+#notices, .AdminDataList {
+	margin-bottom: 20px;
+}
+
+#ProcessPageEdit {
+	position: relative;
+}
+
+
+
+	#container {
+		width: 100%;
+	}
+	#sidebar {
+		width: 100%;
+		margin: 0 auto;
+		border-bottom: 1px solid #DDDDDD;
+	}
+	#sidebar form {
+		float: right;
+		width: 200px;
+		border-bottom: none;
+		padding: 0px 20px;
+	}
+	#sidebar #nav {
+		float: left;
+		padding: 0px 0 0 20px;
+		border-bottom: none;
+	}
+	#sidebar #nav li {
+		display: inline;
+	}
+	#sidebar #nav a {
+		float: left;
+		width: auto !important;
+		position: inherit !important;
+		border-radius: 0px !important;
+		margin-right: 8px;
+	}
+	#sidebar .shadow {
+		display: none;
+	}
+	#sidebar #userinfo {
+		border-bottom: none;
+		float: right;
+	}
+	#sidebar #last_modified {
+		display: none;
+	}
+	#content {
+		width: 90%;
+		padding-left: 5%;
+		padding-right: 5%;
+		min-height: 500px;
+	}
+
+
+.PageList .PageListItem{
+	padding: 8px;
+	margin-bottom: 5px;
+	background: #EEE;
+	border: 1px solid #DDD;
+}
+
+.PageListItem ul li a{
+	color: #A51!important;
+}
+
+.PageListPlaceholderItem{
+	border: 0!important;
+	height: 27px;
+	display: block;
+}
+
+span.detail{
+	color: #666;
+}
