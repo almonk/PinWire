@@ -237,7 +237,8 @@
 	 */
 	.PageList a.PageListPage,
 	.PageList a.PageListPage:hover {
-		color: #11A;
+		color: #36c;
+		font-weight: bold;
 	}
 		/**
 	 	 * Color when hovered

@@ -3,6 +3,7 @@
 
 html{
 	overflow-y:scroll;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 a {
-	color: #A51;
+	color: #3366CC;
 }
 
 a:hover {
@@ -20,7 +21,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 15px;
+	font-size: 22px;
 	font-weight: bold;
 	color: #333;
 	margin-bottom: 20px;
@@ -65,10 +66,24 @@ h2 {
 }
 
 #sidebar #nav a {
-	color: blue;
+	color: #999;
 	display: block;
-	padding: 10px 10px;
+	padding: 5px 10px;
 	font-size: 13px;
+	border: 1px solid #D9D9D9;
+	border-left: 0px;
+	position: relative;
+	top:4px;
+	font-weight: bold;
+}
+
+#sidebar #nav li:nth-child(1) a{
+	border-left: 1px solid #D9D9D9;
+	border-radius:2px 0px 0px 2px!important;
+}
+
+#sidebar #nav li:last-child a{
+	border-radius:0px 2px 2px 0px!important;
 }
 
 #sidebar #nav a:hover {
@@ -80,9 +95,6 @@ h2 {
 	z-index: 2;
 	background: #eee;
 	color: #666;
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 270px;
 );
 background-image: -moz-linear-gradient(
@@ -173,6 +185,7 @@ background-image: -moz-linear-gradient(
 	float: left;
 	width: 919px;
 	padding: 20px 40px 70px;
+	padding-top: 0px;
 	background: #fff;
 	border-left: 1px solid #ddd;
 	min-height: 700px;
@@ -189,8 +202,9 @@ background-image: -moz-linear-gradient(
 #breadcrumb {
 	overflow: hidden;
 	padding-top: 0px;
-	padding-bottom: 5px;
-	margin-bottom: 15px;
+	padding-bottom: 0px;
+	margin-top: 15px;
+	margin-bottom: 0px;
 	color: #bbb;
 	width: 100%;
 }
@@ -209,8 +223,8 @@ background-image: -moz-linear-gradient(
 	color: #999;
 	display: block;
 	float: left;
-
-	padding: 4px 4px 4px 4px;
+	padding: 4px 0px;
+	padding-right: 5px;
 }
 
 #breadcrumb li a:after
@@ -238,7 +252,7 @@ content: "»";
 dt a {
 	font-size: 15px;
 	font-weight: bold;
-	color: #11A;
+	color: #36c;
 	padding-bottom: 5px;
 	display: inline-block;
 }
@@ -338,7 +352,7 @@ dd, p.description {
 		width: auto !important;
 		position: inherit !important;
 		border-radius: 0px !important;
-		margin-right: 8px;
+		margin-right: 0px;
 	}
 	#sidebar .shadow {
 		display: none;
@@ -359,14 +373,15 @@ dd, p.description {
 
 
 .PageList .PageListItem{
-	padding: 8px;
-	margin-bottom: 5px;
+	padding: 8px 8px;
+	margin-bottom: 3px;
 	background: #EEE;
-	border: 1px solid #DDD;
+
+	border-radius:2px;
 }
 
 .PageListItem ul li a{
-	color: #A51!important;
+	color: #756666!important;
 }
 
 .PageListPlaceholderItem{
