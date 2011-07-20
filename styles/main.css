@@ -193,7 +193,6 @@ background-image: -moz-linear-gradient(
 	margin-bottom: 15px;
 	color: #bbb;
 	width: 100%;
-	display: none;
 }
 
 #breadcrumb li:first-child {
@@ -207,20 +206,19 @@ background-image: -moz-linear-gradient(
 
 #breadcrumb li a {
 	font-size: 12px;
-	color: #555;
+	color: #999;
 	display: block;
 	float: left;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	margin-right: 4px;
-	padding: 4px 7px 4px 4px;
+
+	padding: 4px 4px 4px 4px;
+}
+
+#breadcrumb li a:after
+{
+content: "»";
 }
 
 #breadcrumb li a:hover {
-	background: #eee;
-	border-color: #bbb;
 	color: #333;
 	text-decoration: none;
 }
