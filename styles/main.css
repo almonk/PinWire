@@ -25,7 +25,7 @@ h1 {
 	font-weight: bold;
 	color: #333;
 	margin-bottom: 20px;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 h2 {
@@ -203,10 +203,16 @@ background-image: -moz-linear-gradient(
 	overflow: hidden;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	margin-top: 15px;
 	margin-bottom: 0px;
 	color: #bbb;
 	width: 100%;
+	position: fixed;
+	bottom:0px;
+	left:0;
+	background-color: #fff;
+	border-top: 1px solid #DDDDDD;
+	z-index: 9999;
+	padding-left: 10px;
 }
 
 #breadcrumb li:first-child {
@@ -219,7 +225,7 @@ background-image: -moz-linear-gradient(
 }
 
 #breadcrumb li a {
-	font-size: 12px;
+	font-size: 11px;
 	color: #999;
 	display: block;
 	float: left;
